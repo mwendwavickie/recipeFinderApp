@@ -40,4 +40,9 @@ img{
     float: right;
     margin: 5px;
 }
-/* navigation bar */
+/* recipes section*/
+.input-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
