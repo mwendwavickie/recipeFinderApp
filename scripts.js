@@ -42,6 +42,39 @@ function displayResults(data){
     link.classList.add('btn','btn-primary');
     link.href = recipe.url;
     link.textContent = 'View Recipe';
-    
-   })
+
+    // create buttons for liking and bookmarking recipes using bootstrap icons
+    const likeButton = document.createElement('button');
+    likeButton.classList.add('btn','btn-outline-primary','mr-2');
+    likeButton.innerHTML = '<i class="bi bi-heart"></i>';
+    likeButton.addEventListener('click', function() {
+        // Implement logic for liking the recipe
+        // For example, send a request to the server to save the liked recipe
+    console.log('Liked recipe:', recipe.title);
+    });
+
+    var bookmarkButton = document.createElement('button');
+    bookmarkButton.classList.add('btn', 'btn-outline-primary');
+    bookmarkButton.innerHTML = '<i class="bi bi-bookmark"></i>';
+    bookmarkButton.addEventListener('click', function() {
+      // Implement logic for bookmarking the recipe
+      // For example, send a request to the server to bookmark the recipe
+    console.log('Bookmarked recipe:', recipe.title);
+    });
+
+    // Append all elements to the card body
+    cardBody.appendChild(title);
+    cardBody.appendChild(image);
+    cardBody.appendChild(ingredients);
+    cardBody.appendChild(link);
+    cardBody.appendChild(likeButton);
+    cardBody.appendChild(bookmarkButton);
+
+    // Append the card body to the card
+    card.appendChild(cardBody);
+
+    // Append the card to the results container
+    resultsContainer.appendChild(card);
+
+   });
 }
