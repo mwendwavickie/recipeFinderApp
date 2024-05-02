@@ -40,9 +40,49 @@ img{
     float: right;
     margin: 5px;
 }
+.form-control {
+    border: 1 px solid ;
+}
+
 /* recipes section*/
 .input-group{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+/* navigation section*/
+.navbar{
+    background-color: #dffdd7;
+    position: fixed;
+    
+
+}
+.custom-navbar{
+    background-color:#eae5e5;
+    color: black;
+    
+}
+
+
+.navbar-brand{
+    color: white; 
+}
+.navbar-brand img {
+    max-height: 50px;
+    width: auto;
+    height: auto;
+  }
+.navbar-nav .nav-link{
+    color:black;
+}
+.navbar-nav .nav-link:hover{
+    color:#3a7e7d;
+    text-decoration: underline;
+}
+.navbar-line{
+    height: 2px;
+    background-color: black;
+    margin-top: -1px;
 }

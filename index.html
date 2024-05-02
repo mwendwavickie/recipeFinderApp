@@ -12,7 +12,7 @@
 </head>
 <body>
     <!--Navigation Section-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Mama's Recipe</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,9 +21,9 @@
           <div class="collapse navbar-collapse justify-content-end " id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">About</a>
-              <a class="nav-link" href="#">Recipes</a>
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#recipes">Recipes</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </div>
           </div>
         </div>
@@ -38,7 +38,7 @@
                     <img src="images/cooking-food-blogger-cartoon-icon-with-woman-character-computer-monitor.jpg" alt="woman cooking">
                     <h1>Learn Cooking In A Simple way.</h1>
                     <p>A lot of recipes from around the world to try out.Start cooking now!</p>
-                    <a href="#recipes" class="btn btn-outline-success rounded-pill btn-lg mb-4" type="button" id="searchButton">Get Started</a>
+                    <a href="#recipes" class="btn btn-primary rounded-pill btn-lg mb-4" type="button" id="searchButton">Get Started</a>
                     <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
@@ -50,10 +50,10 @@
       <hr>
 
       <!--About us section-->
-      <section id="about" class="py-5">
+      <section id="about" class="py-5 ">
         <div class="container">
             <div class="row">
-                <h2 class="text-center mb-4">About Us</h2>
+                <h2 class="text-center mb-4 mt-5">About Us</h2>
                 <div class="col-lg-6">
                     <p>Welcome to Mama's Recipes, your go-to destination for discovering delicious recipes, meal inspiration, and culinary adventures! We believe that cooking should be enjoyable, accessible, and rewarding for everyone. Whether you're a seasoned chef or a novice cook, our platform is designed to help you explore the world of cooking with ease and confidence.<br>
                     Our mission is to empower individuals to embrace their love for cooking, experiment with new ingredients and flavors, and create memorable meals for themselves and their loved ones. We strive to provide a curated collection of recipes that cater to a diverse range of tastes, preferences, and dietary needs, ensuring that there's something for everyone to enjoy.
@@ -66,11 +66,12 @@
             </div>
         </div>
       </section>
+      <hr>
 
       <!--Featured recepies section-->
       <section  id="recipes">
         <div class="container">
-            <h2 class="text-center mb-4">Featured Recipes</h2>
+            <h2 class="text-center mb-4 mt-4">Featured Recipes</h2>
             <div class="input-group">
                 <form class="d-flex mb-4" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -80,6 +81,7 @@
             </div>
         </div>
       </section>
+      <hr>
 
       <!--Contact secton-->
       <section id="contact" class="contact">
@@ -116,6 +118,7 @@
                 </div>
               </div>
         </section>
+        <hr>
 
         <footer class="text-center bg-body-tertiary">
             <!-- Grid container -->
